@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&family=Roboto:wght@400;500;700&family=Sora:wght@400;500;700&display=swap');
+
 * { box-sizing: border-box; }
 
 a:hover {
   text-decoration: none;
 }
 
-/* ============================================== Header ============================================== */
+.px-4-5 { 
+  padding-left: 2em;
+  padding-right: 2em;
+ }
 
-.header {
-  height: 100vh;
-}
+ .flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+/* ============================================== Header ============================================== */
 
 .top-nav {
   position: absolute;
@@ -81,25 +90,25 @@ a:hover {
 .dev-info {
   position: relative;
   color: white;
-  margin-top: 9em;
+  margin-top: 7.6em;
 }
 
 .dev-name {
   font-family: Sora;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 105.3%;
-  text-align: center;
+  padding-left: 0.8em;
 }
 
 .dev-role {
   font-family: Sora;
   font-style: normal;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   line-height: 105.3%;
-  text-align: center;
+  padding-left: 1.6em;
 }
 
 .dev-about {
@@ -109,7 +118,7 @@ a:hover {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
-  padding: 0 0.8em;
+  padding: 0 2.3em;
   color: #FFFFFF;
 }
 
@@ -120,7 +129,7 @@ a:hover {
   background: #FFFFFF;
   border-radius: 20px;
   padding: 1.7em;
-  margin: 1em 0.7em;
+  margin: 1em 1.9em;
 }
 
 .socials-text {
@@ -138,6 +147,114 @@ a:hover {
   white-space: nowrap;
 }
 
+.social-links > * {
+  margin-right: 0.3em;
+}
+
+.section-h {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 105.3%;
+  color: #4F5461;
+  margin: 1em 0;
+}
+
+.projects-cont {
+  flex-flow: column nowrap;
+}
+
+.project-card { 
+  position: relative;
+  flex: 1 0 auto;
+
+}
+
+.p-image {
+  position: relative;
+  height: 217.24136352539062px;
+  border-radius: 10px;
+}
+
+.project-1 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("assets/big-strawberry.png") no-repeat center / cover;
+}
+
+.project-2 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("assets/big-4.jpg") no-repeat center / cover;
+}
+
+.project-3 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("assets/newsweek.jpg") no-repeat center / cover;
+}
+
+.project-4 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("assets/TNW.jpg") no-repeat center / cover;
+}
+
+
+.p-name {
+  position: relative;
+  top: 5px;
+  left: 15px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  z-index: 3;
+}
+
+.p-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s;
+  border-radius: 10px;
+}
+
+.p-btn {
+  border-radius: 60px;
+  margin-bottom: 1.5em;
+  padding: 0.8em;
+  opacity: 1;
+}
+
+.p-link:hover {
+  background-color: transparent;
+}
+
+.badge-cont {
+  display: flex;
+  align-items: center;
+  margin: 0.6em 0;
+  opacity: 1;
+}
+
+.p-badge {
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 21px;
+text-align: center;
+color: #E6E9F0;
+flex: 1 0 auto;
+max-width: 120px;
+}
+
+.badge-dark2 {
+  background-color: #4F5461;
+}
+
 @media screen and (max-width: 260px) {
 
   .logo { top: -2px; }
@@ -151,6 +268,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  
   .top-nav {
     position: static;
     z-index: 1;
@@ -202,6 +320,7 @@ a:hover {
 
   .main-info {
     background: url("assets/header-shape.png") no-repeat left / cover;
+    padding-bottom: 6em !important;
   }
 
   .purple-gradient {
@@ -212,9 +331,12 @@ a:hover {
     position: relative;
     text-align: left;
     color: white;
-    margin: 12.5% 7.5% 10% 18.5%;
   }
   
+  .left-side-margin {
+    margin: 12.5% 7.5% 10% 18.5%;
+  }
+
   .dev-name {
 
     font-family: Roboto;
@@ -271,5 +393,60 @@ a:hover {
     white-space: nowrap;
     margin-right: 3em;
     font-size: 1.4rem;
+  }
+
+  .section-h {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 105.3%;
+    color: #4F5461;
+    margin-top: 0.5em;
+  }
+
+  .projects-cont {
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+  }
+
+  .project-card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 366px;
+    margin-top: 1em;
+  }
+
+  .p-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+  
+  }
+
+  .p-btn {
+    opacity: 0;
+    padding: 0.7em;
+    width: 50%;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 7%;
+    transition: opacity 0.2s;
+  }
+
+  .badge-cont {
+    opacity: 0;
+    width: 70%;
+    position: absolute;
+    top: 36px;
+    left: 20px;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+
+  .p-badge {
+    font-size: 12px;
   }
 }

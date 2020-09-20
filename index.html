@@ -6,7 +6,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&family=Sora:wght@300;400;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/e2597287a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,15 +16,15 @@
           <span class="logo-text">RM</span>
         </a>
         <div class="nav-links">
-          <a href="#my-portfolio">Portfolio</a>
-          <a href="#about-me">About</a>
-          <a href="#contact-me">Contact</a>
+          <a href="#1">Portfolio</a>
+          <a href="#2">About</a>
+          <a href="#3">Contact</a>
         </div>
       </nav>
 
       <div class="main-info col-md-9 p-0">
         <div class="purple-gradient"></div>
-        <div class="dev-info">
+        <div class="dev-info left-side-margin">
           <p class="dev-name">Rashid Mammadli</p>
           <p class="dev-role">Full-Stack Software Developer</p>
           <span class="dev-about">
@@ -54,12 +53,113 @@
   </header>
 
   <main>
-    <div class="my-portfolio"></div>
-    <div class="about-me"></div>
-    <div class="contact-me"></div>
+    <div class="row m-0">
+      <div class="col-md-3 p-0"></div>
+      <div class="col-md-9 p-md-0 px-4-5">
+        <div class="left-side-margin mt-2">
+          <div id="1" class="my-portfolio">
+            <h2 class="section-h">My Portfolio</h2>
+            <div class="projects-cont row m-0">
+
+              <div class="project-card project-1 mr-md-3" data-actions=''>
+                <div class="p-image tt">
+                  <span class="p-name">Big Strawberry</span>
+                  <span class="p-link"></span>
+                </div>
+                <div class="badge-cont">
+                  <span class="p-badge badge badge-pill badge-dark2">HTML/CSS</span>
+                  <span class="p-badge badge badge-pill badge-dark2 mx-1">Ruby on Rails</span>
+                  <span class="p-badge badge badge-pill badge-dark2">Bootstrap</span>
+                </div>
+                <a class="btn btn-block btn-primary p-btn" href="https://github.com/8Bts/Big_Strawberry">
+                  See the project
+                </a>
+              </div>
+
+              <div class="project-card project-2">
+                <div class="p-image">
+                  <span class="p-name">Metal Concert Tickets </span>
+                  <span class="p-link"></span>
+                </div>
+                <div class="badge-cont">
+                  <span class="p-badge badge badge-pill badge-dark2 mx-1">HTML/CSS</span>
+                  <span class="p-badge badge badge-pill badge-dark2">Bootstrap</span>
+                </div>
+                <a class="btn btn-block btn-primary p-btn" href="https://github.com/8Bts/the_big_4_festival">
+                  See the project
+                </a>
+              </div>
+
+              <div class="project-card project-3 mr-md-3">
+                <div class="p-image tt">
+                  <span class="p-name">Newsweek Clone</span>
+                  <span class="p-link"></span>
+                </div>
+                <div class="badge-cont">
+                  <span class="p-badge badge badge-pill badge-dark2">HTML/CSS</span>
+                  <span class="p-badge badge badge-pill badge-dark2 mx-1">Bootstrap</span>
+                  <span class="p-badge badge badge-pill badge-dark2">Javascript</span>
+                </div>
+                <a class="btn btn-block btn-primary p-btn" href="https://github.com/8Bts/newsweek-clone">
+                  See the project
+                </a>
+              </div>
+
+              <div class="project-card project-4">
+                <div class="p-image">
+                  <span class="p-name">The Next Web Clone</span>
+                  <span class="p-link"></span>
+                </div>
+                <div class="badge-cont">
+                  <span class="p-badge badge badge-pill badge-dark2">HTML/CSS</span>
+                </div>
+                <a class="btn btn-block btn-primary p-btn" href="https://github.com/temesghentekeste/thenextweb-clone">
+                  See the project
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          <div id="2" class="about-me">
+            <h2 class="section-h">About Me</h2>
+          </div>
+          <div id="3" class="contact-me">
+            <h2 class="section-h">Interested in collaborating?</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer></footer>
+  <script>
+    let projects = Array.from(document.getElementsByClassName('project-card'));
+   
+    projects.forEach( project => {
+      let nodesToToggle = Array.from(project.childNodes).filter(
+        node => (node.className === 'badge-cont' || ( node.className !== undefined && node.className.includes('p-btn')))
+        );
 
+      project.onmouseover = () => {
+        nodesToToggle.forEach(node => node.style.opacity = 1);
+      }
+      project.onmouseout = () => {
+        nodesToToggle.forEach(node => node.style.opacity = 0);
+      }
+    });
+
+    window.onresize = () => {
+      
+      let badges = Array.from(document.getElementsByClassName('badge-cont'));
+      let btns = Array.from(document.getElementsByClassName('p-btn'));
+      if(window.innerWidth < 768){
+        badges.forEach(node => node.style.opacity = 1);
+        btns.forEach(node => node.style.opacity = 1);
+      } else {
+        badges.forEach(node => node.style.opacity = 0);
+        btns.forEach(node => node.style.opacity = 0);
+      }
+    }
+  </script>
 </body>
 </html>
