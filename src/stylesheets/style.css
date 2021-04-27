@@ -260,6 +260,39 @@ a:hover {
   color: #737986;
 }
 
+.skills-cont {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.skill-card {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 370px;
+  margin: 1em 0;
+  padding: 2em;
+  background: #f5f8fd;
+  border-radius: 10px;
+}
+
+.skill-card-h {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 105.3%;
+  color: #4f5461;
+}
+
+.skill-card-span {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 242.5%;
+  color: #737986;
+}
+
 @media screen and (max-width: 260px) {
 
   .logo { top: -2px; }
@@ -462,5 +495,33 @@ a:hover {
     line-height: 22px;
     letter-spacing: 0;
     text-align: left;
+  }
+
+  .skills-cont {
+    flex-flow: row nowrap;
+  }
+
+  .skill-card {
+    flex: 1 0 232px;
+    margin-right: 1.3em;
+  }
+
+  .skill-card-h {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 105.3%;
+    color: #4f5461;
+    margin-bottom: 1em;
+  }
+
+  .skill-card-span {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 242.5%;
+    color: #4f5461;
   }
 }
