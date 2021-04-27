@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&family=Roboto:wght@400;500;700&family=Sora:wght@400;500;700&display=swap');
+
+* { box-sizing: border-box; }
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.px-4-5 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================================== Header ============================================== */
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 2em 0.5em;
+}
+
+.logo {
+  position: relative;
+  top: -1px;
+  width: 50px; /* 64px in larger devices */
+  height: 50px;
+  border-radius: 50%;
+  background: #4456fb;
+  margin-left: 5%;
+}
+
+.logo-text {
+  position: absolute;
+  top: 14px;
+  left: 9px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 105.3%;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-left: 9%;
+  position: relative;
+  top: 3px;
+}
+
+.nav-links > * {
+  display: inline-block;
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.77rem;
+  line-height: 338.5%;
+  color: #fff;
+  margin: 0 0.2em;
+}
+
+.main-info {
+  position: relative;
+  background: url('../assets/shutterstock.png') no-repeat center / cover;
+}
+
+.purple-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(248.05deg, #ae5bd6 24.1%, #4052f0 99.44%);
+  background-blend-mode: screen;
+  opacity: 0.7;
+}
+
+.dev-info {
+  position: relative;
+  color: white;
+  margin-top: 7.6em;
+}
+
+.dev-name {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 105.3%;
+  padding-left: 0.8em;
+}
+
+.dev-role {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 105.3%;
+  padding-left: 1.6em;
+}
+
+.dev-about {
+  display: inline-block;
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0 2.3em;
+  color: #fff;
+}
+
+.social-links-box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.7em;
+  margin: 1em 1.9em;
+}
+
+.socials-text {
+  text-align: center;
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: #4f5461;
+  white-space: nowrap;
+}
+
+.social-links {
+  white-space: nowrap;
+}
+
+.social-links > * {
+  margin-right: 0.3em;
+}
+
+.section-h {
+  font-family: Sora, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 105.3%;
+  color: #4f5461;
+  margin: 1em 0;
+}
+
+.projects-cont {
+  flex-flow: column nowrap;
+}
+
+.project-card {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+.p-image {
+  position: relative;
+  height: 217.24136352539062px;
+  border-radius: 10px;
+}
+
+.project-1 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("../assets/big-strawberry.png") no-repeat center / cover;
+}
+
+.project-2 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("../assets/big-4.jpg") no-repeat center / cover;
+}
+
+.project-3 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("../assets/Phaser-Logo-Small.png") no-repeat center / contain;
+}
+
+.project-4 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("../assets/TNW.jpg") no-repeat center / cover;
+}
+
+.p-name {
+  position: relative;
+  top: 5px;
+  left: 15px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  z-index: 3;
+}
+
+.p-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s;
+  border-radius: 10px;
+}
+
+.p-btn {
+  border-radius: 60px;
+  margin-bottom: 1.5em;
+  padding: 0.6em;
+  opacity: 1;
+}
+
+.p-link:hover {
+  background-color: transparent;
+}
+
+.badge-cont {
+  display: flex;
+  align-items: center;
+  margin: 0.6em 0;
+  opacity: 1;
+}
+
+.p-badge {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 21px;
+  text-align: center;
+  color: #e6e9f0;
+  flex: 1 0 auto;
+  max-width: 120px;
+}
+
+.badge-dark2 {
+  background-color: #4f5461;
+}
+
+.about-me-cont {
+  font-family: Sora, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #737986;
+}
+
+@media screen and (max-width: 260px) {
+
+  .logo { top: -2px; }
+
+  .nav-links {
+    margin-left: 5%;
+    top: 6px;
+  }
+  .nav-links > * { font-size: 0.65rem; }
+  .socials-text { margin-right: 0; }
+}
+
+@media screen and (min-width: 768px) {
+  .top-nav {
+    position: static;
+    z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .logo {
+    position: relative;
+    top: -1px;
+    left: 25%;
+    width: 64px; /* 64px in larger devices */
+    height: 64px;
+    border-radius: 50%;
+    background: #4456fb;
+    margin-left: 5%;
+  }
+
+  .logo-text {
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 105.3%;
+    color: #fff;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 32%;
+  }
+
+  .nav-links > * {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 338.5%;
+    color: #4456fb;
+  }
+
+  .main-info {
+    background: url("../assets/header-shape.png") no-repeat left / cover;
+    padding-bottom: 6em !important;
+  }
+
+  .purple-gradient {
+    display: none;
+  }
+
+  .dev-info {
+    position: relative;
+    text-align: left;
+    color: white;
+  }
+
+  .left-side-margin {
+    margin: 12.5% 7.5% 10% 18.5%;
+  }
+
+  .dev-name {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 105.3%;
+    text-align: left;
+    color: #fff;
+    padding: 0;
+  }
+
+  .dev-role {
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 105.3%;
+    color: #fff;
+    padding: 0;
+  }
+
+  .dev-about {
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    padding: 0 45% 1em 0;
+  }
+
+  .social-links-box {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0.55em;
+    margin: 0;
+  }
+
+  .socials-text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4f5461;
+    padding-left: 1em;
+  }
+
+  .social-links {
+    white-space: nowrap;
+    margin-right: 3em;
+    font-size: 1.4rem;
+  }
+
+  .section-h {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 105.3%;
+    color: #4f5461;
+    margin-top: 0.5em;
+  }
+
+  .projects-cont {
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+  }
+
+  .project-card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 366px;
+    margin-top: 1em;
+  }
+
+  .p-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+  }
+
+  .p-btn {
+    opacity: 0;
+    padding: 0.5em;
+    width: 40%;
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 7%;
+    transition: opacity 0.2s;
+  }
+
+  .p-live {
+    left: 53%;
+  }
+
+  .badge-cont {
+    opacity: 0;
+    width: 70%;
+    position: absolute;
+    top: 36px;
+    left: 20px;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+
+  .p-badge {
+    font-size: 12px;
+  }
+
+  .about-me-cont {
+    width: 50%;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+}

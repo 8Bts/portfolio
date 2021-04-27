@@ -1,0 +1,45 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.0-beta3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "*",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "file-loader": "^6.2.0",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.13.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.19.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  },
+  "scripts": {
+    "test": "test",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production --progress",
+    "watch": "webpack --watch --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8Bts/portfolio.git"
+  },
+  "keywords": [
+    "rashidmammadli"
+  ],
+  "author": "8Bts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8Bts/portfolio/issues"
+  },
+  "homepage": "https://github.com/8Bts/portfolio#readme"
+}
