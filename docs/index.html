@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
   <title>Portfolio</title>
 </head>
 <body>
+  
   <header class="header">
     <div class="row m-0 h-100">
       <nav class="d-flex top-nav col-md-3">
@@ -18,7 +20,7 @@
           <a href="#3">Contact</a>
         </div>
       </nav>
-
+      
       <div class="main-info col-md-9 p-0">
         <div class="purple-gradient"></div>
         <div class="dev-info left-side-margin">
@@ -29,27 +31,27 @@
             I can help you build a product, feature, or website. Look through some of my work below! If you like what you see and have a project you need coded, don’t hesitate to contact me.
           </span>
           <div class="social-links-box">
-          <span class="socials-text">My social network profiles</span>
-          <span class="social-links">
-            <a target="_blank" href="https://www.linkedin.com/in/rashidmammadli/" class="icon-link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://twitter.com/Rasheed49705929" class="icon-link">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a target="_blank" href="https://www.github.com/8bts" class="icon-link">
-              <i class="fab fa-github"></i>
-            </a>
-            <a target="_blank" href="https://medium.com/@mcmizze" class="icon-link">
-              <i class="fab fa-medium"></i>
-            </a>
-          </span>
+            <span class="socials-text">My social network profiles</span>
+            <span class="social-links">
+              <a target="_blank" href="https://www.linkedin.com/in/rashidmammadli/" class="icon-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/Rasheed49705929" class="icon-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a target="_blank" href="https://www.github.com/8bts" class="icon-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://medium.com/@mcmizze" class="icon-link">
+                <i class="fab fa-medium"></i>
+              </a>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </header>
-
+  
   <main>
     <div class="row m-0">
       <div class="col-md-3 p-0"></div>
@@ -58,7 +60,7 @@
           <div id="1" class="my-portfolio">
             <h2 class="section-h">My Portfolio</h2>
             <div class="projects-cont row m-0">
-
+              
               <div class="project-card project-1 mr-md-3" data-actions=''>
                 <div class="p-image tt">
                   <span class="p-name">Big Strawberry</span>
@@ -76,7 +78,7 @@
                   See Live
                 </a>
               </div>
-
+              
               <div class="project-card project-2">
                 <div class="p-image">
                   <span class="p-name">Metal Concert Tickets </span>
@@ -93,7 +95,7 @@
                   See Live
                 </a>
               </div>
-
+              
               <div class="project-card project-3 mr-md-3">
                 <div class="p-image tt">
                   <span class="p-name">Phaser Game - Bear The Fisher</span>
@@ -111,7 +113,7 @@
                   See Live
                 </a>
               </div>
-
+              
               <div class="project-card project-4">
                 <div class="p-image">
                   <span class="p-name">The Next Web Clone</span>
@@ -170,13 +172,30 @@
           </div>
           <div id="3" class="contact-me">
             <h2 class="section-h">Interested in collaborating?</h2>
+            <div class="about-me-cont w-75">
+              <p>
+                If you have an application you are interested in developing, a feature that you need built or a project that need coding, I’d love to help you with it.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-  <footer></footer>
+  
+  <footer>
+    <div class="footer-cont px-4-5">
+      <form class="contact-form">
+        <div class="contact-inp-cont">
+          <input class="form-control contact-form-in me-2" type="text" placeholder="Full Name *">
+          <input class="form-control contact-form-in" type="email" placeholder="Email">
+        </div>
+        <textarea class="form-control contact-form-in message-inp" placeholder="Message"></textarea>
+        <button class="btn btn-danger contact-btn">Get in touch</button>
+      </form>
+    </div>
+  </footer>
+  
   <script src="main.js"></script>
 </body>
 </html>
