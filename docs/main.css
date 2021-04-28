@@ -148,6 +148,8 @@ a:hover {
 
 .social-links {
   white-space: nowrap;
+  font-size: 1.8rem;
+  padding-top: 0.5em;
 }
 
 .social-links > * {
@@ -302,7 +304,6 @@ a:hover {
 
 .footer-cont {
   background: linear-gradient(234.04deg, #7f38da 0%, #4052f0 71.02%);
-  height: 561px;
   padding-top: 1em;
 }
 
@@ -331,6 +332,28 @@ a:hover {
   border-radius: 60px;
   width: 100%;
   height: 59px;
+}
+
+.footer-hr {
+  border: 1px solid #9fa8ff;
+}
+
+.footer-span {
+  display: block;
+  font-family: Sora, sans-serif;
+  line-height: 20px;
+  text-align: center;
+  color: #c5cbfe;
+  margin-top: 2em;
+}
+
+.footer-links {
+  display: block;
+  text-align: center;
+}
+
+.footer-links > a {
+  color: white;
 }
 
 @media screen and (max-width: 260px) {
@@ -566,6 +589,7 @@ a:hover {
   }
 
   .footer-cont {
+    position: relative;
     background: url(images/201982c6f2ff3496d1bca0a75c18f258.png) no-repeat top left / cover;
     width: 75%;
     float: right;
@@ -590,6 +614,31 @@ a:hover {
 
   .contact-btn {
     width: 242px;
+  }
+
+  .footer-hr {
+    margin: 1em 9.5em;
+    width: 78%;
+  }
+
+  .email-span {
+    display: inline-block;
+    position: absolute;
+    right: 122px;
+    top: 280px;
+  }
+
+  .footer-links {
+    text-align: right;
+  }
+
+  .footer-links > a:hover {
+    color: #0d6efd;
+  }
+
+  .copyright-span {
+    text-align: right;
+    margin-right: 2em;
   }
 }
 
