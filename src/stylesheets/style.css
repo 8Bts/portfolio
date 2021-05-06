@@ -187,10 +187,6 @@ a:hover {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("../assets/Phaser-Logo-Small.png") no-repeat center / contain;
 }
 
-.project-4 .p-image {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url("../assets/TNW.jpg") no-repeat center / cover;
-}
-
 .p-name {
   position: relative;
   top: 5px;
@@ -212,7 +208,7 @@ a:hover {
   position: absolute;
   left: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
   transition: background-color 0.4s;
   border-radius: 10px;
 }
@@ -225,13 +221,10 @@ a:hover {
   opacity: 1;
 }
 
-.p-link:hover {
-  background-color: transparent;
-}
-
 .badge-cont {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0.6em 0;
   opacity: 1;
 }
@@ -250,6 +243,12 @@ a:hover {
 
 .badge-dark2 {
   background-color: #4f5461;
+}
+
+.p-desc {
+  text-align: center;
+  margin: 1em;
+  opacity: 1;
 }
 
 .about-me-cont {
@@ -537,10 +536,24 @@ a:hover {
     left: 20px;
     white-space: nowrap;
     transition: opacity 0.2s;
+    z-index: 4;
   }
 
   .p-badge {
     font-size: 12px;
+  }
+
+  .p-desc {
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: white;
+    position: absolute;
+    top: 37%;
+    width: 85%;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 4;
   }
 
   .about-me-cont {
@@ -555,11 +568,12 @@ a:hover {
   }
 
   .skills-cont {
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   .skill-card {
-    flex: 1 0 232px;
+    flex: 1 0 227px;
     margin-right: 1.3em;
   }
 
@@ -594,7 +608,7 @@ a:hover {
   }
 
   .contact-form-in {
-    width: 332px;
+    width: 41.8%;
   }
 
   .contact-inp-cont {
@@ -602,7 +616,7 @@ a:hover {
   }
 
   .message-inp {
-    width: 672px;
+    width: 84.4%;
     height: 185px;
   }
 
@@ -618,8 +632,8 @@ a:hover {
   .email-span {
     display: inline-block;
     position: absolute;
-    right: 122px;
-    top: 280px;
+    left: 22%;
+    bottom: 22%;
   }
 
   .footer-links {

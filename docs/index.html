@@ -71,6 +71,9 @@
                   <span class="p-badge badge rounded-pill badge-dark2 mx-1">Ruby on Rails</span>
                   <span class="p-badge badge rounded-pill badge-dark2">Bootstrap</span>
                 </div>
+                <p class="p-desc">
+                  Fully functional Rails application about publishing cooking recipes
+                </p>
                 <a target="_blank" class="btn btn-block btn-primary p-btn" href="https://github.com/8Bts/Big_Strawberry">
                   See Source
                 </a>
@@ -88,6 +91,9 @@
                   <span class="p-badge badge rounded-pill badge-dark2 mx-1">HTML/CSS</span>
                   <span class="p-badge badge rounded-pill badge-dark2">Bootstrap</span>
                 </div>
+                <p class="p-desc">
+                  Fancy front-end work build with plain HTML/CSS
+                </p>
                 <a target="_blank" class="btn btn-block btn-primary p-btn" href="https://github.com/8Bts/the_big_4_festival">
                   See Source
                 </a>
@@ -106,26 +112,13 @@
                   <span class="p-badge badge rounded-pill badge-dark2 mx-1">HTML5</span>
                   <span class="p-badge badge rounded-pill badge-dark2">Javascript</span>
                 </div>
+                <p class="p-desc">
+                  2d cartoon Fishing game built with Phaser 3 Framework 
+                </p>
                 <a target="_blank" class="btn btn-block btn-primary p-btn" href="https://github.com/8Bts/Bear_The_Fisher">
                   See Source
                 </a>
                 <a target="_blank" class="btn btn-block btn-primary p-btn p-live" href="https://bearthefisher.herokuapp.com/">
-                  See Live
-                </a>
-              </div>
-              
-              <div class="project-card project-4">
-                <div class="p-image">
-                  <span class="p-name">The Next Web Clone</span>
-                  <span class="p-link"></span>
-                </div>
-                <div class="badge-cont">
-                  <span class="p-badge badge rounded-pill badge-dark2">HTML/CSS</span>
-                </div>
-                <a target="_blank" class="btn btn-block btn-primary p-btn" href="https://github.com/temesghentekeste/thenextweb-clone">
-                  See Source
-                </a>
-                <a target="_blank" class="btn btn-block btn-primary p-btn p-live" href="https://rawcdn.githack.com/temesghentekeste/thenextweb-clone/8cecd88724a8215d6c601dab5a633be11625997c/index.html">
                   See Live
                 </a>
               </div>
@@ -136,8 +129,7 @@
             <h2 class="section-h">About Me</h2>
             <div class="about-me-cont">
               <p>
-                In three sentences describe who you are as a proffessional. Look through some of my work and experience! If you like what you see and have project 
-                you need coded, don’t hesistate to contact me.
+                Experienced full-stack developer and passionate about programming. I am currently looking for new opportunities. Look through some of my work and experience! If you like what you see and have a project you need to be coded, don’t hesitate to contact
               </p>
             </div>
           </div>
@@ -185,12 +177,12 @@
   
   <footer>
     <div class="footer-cont px-4-5">
-      <form class="contact-form">
+      <form id='contactForm' class="contact-form">
         <div class="contact-inp-cont">
-          <input class="form-control contact-form-in me-2" type="text" placeholder="Full Name *">
-          <input class="form-control contact-form-in" type="email" placeholder="Email">
+          <input id="fullName" class="form-control contact-form-in me-2" type="text" placeholder="Full Name *" maxlength="32">
+          <input id="email" class="form-control contact-form-in" type="email" placeholder="Email" maxlength="32">
         </div>
-        <textarea class="form-control contact-form-in message-inp" placeholder="Message"></textarea>
+        <textarea id="message" class="form-control contact-form-in message-inp" placeholder="Message"></textarea>
         <button class="btn btn-danger contact-btn">Get in touch</button>
       </form>
       <span class="footer-span email-span">mcmizze@yahoo.com</span>
