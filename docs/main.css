@@ -186,7 +186,7 @@ a:hover {
 }
 
 .project-2 .p-image {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/29321bf7c146311b8302e9e9c1c3d8b8.jpg) no-repeat center / cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/397617058f92c6d9e9ab4f7a5ecd715d.png) no-repeat center / contain;
 }
 
 .project-3 .p-image {
