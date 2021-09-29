@@ -182,14 +182,18 @@ a:hover {
 }
 
 .project-1 .p-image {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/1f120602a89d2807fbcab4f405aa2a91.png) no-repeat center / cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/1da9df00f9c862d8adf0fe7d34eab1ba.png) no-repeat center / cover;
 }
 
 .project-2 .p-image {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/397617058f92c6d9e9ab4f7a5ecd715d.png) no-repeat center / contain;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/1f120602a89d2807fbcab4f405aa2a91.png) no-repeat center / cover;
 }
 
 .project-3 .p-image {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/397617058f92c6d9e9ab4f7a5ecd715d.png) no-repeat center / contain;
+}
+
+.project-4 .p-image {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 98.35%), url(images/18a7191678e558c5519c3e330eff5f85.png) no-repeat center / contain;
 }
 
@@ -536,7 +540,7 @@ a:hover {
 
   .badge-cont {
     opacity: 0;
-    width: 70%;
+    width: 90%;
     position: absolute;
     top: 36px;
     left: 20px;
