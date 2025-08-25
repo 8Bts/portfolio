@@ -30,7 +30,7 @@
   "scripts": {
     "test": "test",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production --progress",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production --progress",
     "watch": "webpack --watch --mode production"
   },
   "repository": {
